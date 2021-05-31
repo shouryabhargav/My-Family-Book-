@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project-78</title>
+        <style>
+            body {text-align: center;}
+            h1   {text-shadow: 2px 2px red;
+                  font-size: 32px;}
+            button {background-color: lightgray;
+                  font-size: 15px;
+                  height: 30px;
+                  width: 70px; 
+                }
+
+            img {height:400px;
+            } 
+        </style>
+    </head>
+    <body>
+        <h1 id="head1">Family Book</h1>
+        <img src="https://whjr.imgix.net/6d93886f-4201-496d-af6c-062c4fb0b5e2.jpg" id="family_member_image">
+        <br>
+        <br>
+        <h4 id="family_member_name">1. Family book cover page</h4>
+        <br>
+        <br>
+        <button type="button" onclick="family()">Next</button>
+        
+        
+        <script>   
+     var names=["1. Suman Bhargava", 
+               "2. Mahesh Bhargava", 
+               "3. Bhavana Bhargava", 
+               "4. Sorabh Bhargava", 
+               "5. Shourya Bhargava"];
+        
+        var image =
+            ["https://scontent.fdel27-1.fna.fbcdn.net/v/t1.6435-9/96378822_2597935513775673_6635884966657916928_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=730e14&_nc_ohc=q3aIIhm9VWcAX-Iy0Cx&_nc_ht=scontent.fdel27-1.fna&oh=6ae63c2c0e6f08cad7ec68f70f988426&oe=60C1ACD7", 
+            "https://scontent.fdel27-1.fna.fbcdn.net/v/t1.6435-9/130734786_682033699345607_1851372093692189849_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=e3f864&_nc_ohc=FDBuN9zoF18AX-pAcBV&_nc_ht=scontent.fdel27-1.fna&oh=d2cd3c3665f049644aa70e71fe160730&oe=60C13516", 
+            "https://scontent.fdel27-3.fna.fbcdn.net/v/t1.6435-9/45193707_2197712967131265_4682949004860850176_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=730e14&_nc_ohc=I84MT4MWL_4AX-wyj-t&_nc_ht=scontent.fdel27-3.fna&oh=d4732eea312c8542d618310e9e9fa759&oe=60BE2ED9",  
+            "https://scontent.fdel27-2.fna.fbcdn.net/v/t1.6435-9/54256254_2278020629100498_2180176342056697856_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=730e14&_nc_ohc=4nBAGTOt0k0AX9zwUEG&_nc_ht=scontent.fdel27-2.fna&oh=3f99772ac936df0a0bcb20147f3eb7d5&oe=60C08D79",  
+            "Shourya Bhargava.jpg"];
+var i=0;
+ function family() {
+ document.getElementById("family_member_image").src=image[i];
+ document.getElementById("family_member_name").innerHTML=names[i];
+   i++ ;
+    
+    if(i==5){
+        i=0;
+    };
+
+}
+        </script>
+    </body>
+</html>
